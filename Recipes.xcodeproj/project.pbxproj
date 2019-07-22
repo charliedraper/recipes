@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		EDA1BF0722DF707800BED333 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA1BF0622DF707800BED333 /* AppDelegate.swift */; };
-		EDA1BF0922DF707800BED333 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA1BF0822DF707800BED333 /* ViewController.swift */; };
 		EDA1BF0C22DF707900BED333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA1BF0A22DF707900BED333 /* Main.storyboard */; };
 		EDA1BF0F22DF707900BED333 /* Recipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDA1BF0D22DF707900BED333 /* Recipes.xcdatamodeld */; };
 		EDA1BF1122DF707B00BED333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA1BF1022DF707B00BED333 /* Assets.xcassets */; };
 		EDA1BF1422DF707B00BED333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA1BF1222DF707B00BED333 /* LaunchScreen.storyboard */; };
 		EDA1BF1F22DF707B00BED333 /* RecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA1BF1E22DF707B00BED333 /* RecipesTests.swift */; };
+		EDA1BF2A22DF736300BED333 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA1BF2922DF736300BED333 /* RecipeTableViewController.swift */; };
+		EDA1BF2C22DF766A00BED333 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA1BF2B22DF766A00BED333 /* RecipeTableViewCell.swift */; };
+		EDA1BF2E22DF875C00BED333 /* ShowRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA1BF2D22DF875B00BED333 /* ShowRecipeViewController.swift */; };
+		EDA1BF3222DF890A00BED333 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA1BF3122DF890A00BED333 /* Recipe.swift */; };
+		EDF9C14122E0BA7B0092E9BF /* ModifyRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9C14022E0BA7B0092E9BF /* ModifyRecipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +33,6 @@
 /* Begin PBXFileReference section */
 		EDA1BF0322DF707800BED333 /* Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA1BF0622DF707800BED333 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDA1BF0822DF707800BED333 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EDA1BF0B22DF707900BED333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDA1BF0E22DF707900BED333 /* Recipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recipes.xcdatamodel; sourceTree = "<group>"; };
 		EDA1BF1022DF707B00BED333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +41,11 @@
 		EDA1BF1A22DF707B00BED333 /* RecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA1BF1E22DF707B00BED333 /* RecipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTests.swift; sourceTree = "<group>"; };
 		EDA1BF2022DF707B00BED333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDA1BF2922DF736300BED333 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
+		EDA1BF2B22DF766A00BED333 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		EDA1BF2D22DF875B00BED333 /* ShowRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRecipeViewController.swift; sourceTree = "<group>"; };
+		EDA1BF3122DF890A00BED333 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		EDF9C14022E0BA7B0092E9BF /* ModifyRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyRecipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +88,14 @@
 			isa = PBXGroup;
 			children = (
 				EDA1BF0622DF707800BED333 /* AppDelegate.swift */,
-				EDA1BF0822DF707800BED333 /* ViewController.swift */,
+				EDA1BF2922DF736300BED333 /* RecipeTableViewController.swift */,
+				EDA1BF2B22DF766A00BED333 /* RecipeTableViewCell.swift */,
+				EDF9C14022E0BA7B0092E9BF /* ModifyRecipeViewController.swift */,
+				EDA1BF2D22DF875B00BED333 /* ShowRecipeViewController.swift */,
+				EDA1BF3122DF890A00BED333 /* Recipe.swift */,
 				EDA1BF0A22DF707900BED333 /* Main.storyboard */,
-				EDA1BF1022DF707B00BED333 /* Assets.xcassets */,
 				EDA1BF1222DF707B00BED333 /* LaunchScreen.storyboard */,
+				EDA1BF1022DF707B00BED333 /* Assets.xcassets */,
 				EDA1BF1522DF707B00BED333 /* Info.plist */,
 				EDA1BF0D22DF707900BED333 /* Recipes.xcdatamodeld */,
 			);
@@ -200,9 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA1BF0922DF707800BED333 /* ViewController.swift in Sources */,
 				EDA1BF0722DF707800BED333 /* AppDelegate.swift in Sources */,
+				EDF9C14122E0BA7B0092E9BF /* ModifyRecipeViewController.swift in Sources */,
+				EDA1BF2A22DF736300BED333 /* RecipeTableViewController.swift in Sources */,
 				EDA1BF0F22DF707900BED333 /* Recipes.xcdatamodeld in Sources */,
+				EDA1BF3222DF890A00BED333 /* Recipe.swift in Sources */,
+				EDA1BF2C22DF766A00BED333 /* RecipeTableViewCell.swift in Sources */,
+				EDA1BF2E22DF875C00BED333 /* ShowRecipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.charliedraper.Recipes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -392,7 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.charliedraper.Recipes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
